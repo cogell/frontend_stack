@@ -1,0 +1,11 @@
+{
+  "name": "frontend_stack",
+  "version": "0.0.1",
+  "description": "some hello world and exploration of my personal javascript stack (work in progress)",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "B. Cedric Cogell",
+  "license": "CC"
+}
