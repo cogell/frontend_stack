@@ -3,11 +3,7 @@ var config      = require('../../config')[taskname];
 var gulp        = require('gulp');
 var ts          = require('gulp-typescript');
 
-var tsProject   = ts.createProject({
-  declarationFiles: false,
-  noExternalResolve: false,
-  sortOutput: true
-});
+var tsProject   = ts.createProject(config.opts);
 
 gulp.task( taskname, function () {
   var tResult = gulp.src( config.src )

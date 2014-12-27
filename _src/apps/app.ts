@@ -2,8 +2,14 @@
 
 import _ = require('lodash');
 
-var firstName = function (names: Array<String>): String {
-  return _.head(names);
-};
+module App {
 
-firstName(['cedric', 'cogell']);
+  var firstName = function (names: Array<String>): String {
+    return 'hello' + _.head(names);
+  };
+
+  export var start = function () {
+    firstName(['cedric', 'cogell']);
+  };
+
+}
