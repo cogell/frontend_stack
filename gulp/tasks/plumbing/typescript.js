@@ -5,9 +5,17 @@ var ts          = require('gulp-typescript');
 
 var tsProject   = ts.createProject(config.opts);
 
-gulp.task( taskname, function () {
+var tsc = function () {
   var tResult = gulp.src( config.src )
     .pipe( ts(tsProject, undefined, ts.reporter.fullReporter(true)) );
 
   return tResult.js.pipe( gulp.dest( config.dest ) );
+};
+
+gulp.task( taskname, function () {
+  tsc();
 });
+
+module.exports = {
+  tsc: tsc
+};

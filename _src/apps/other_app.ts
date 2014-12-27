@@ -1,3 +1,3 @@
 module OtherApp {
-  export var hello:string = "hello";
+  export var hello: string = "hello";
 }

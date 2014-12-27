@@ -6,8 +6,10 @@ var sourcemaps = require('gulp-sourcemaps');
 var concat     = require('gulp-concat');
 var uglify     = require('gulp-uglify');
 
+var ts         = require('./typescript');
+
 gulp.task( taskname, function () {
-  return gulp.src( config.src )
+  return ts.tsc()
     .pipe( sourcemaps.init() )
       .pipe( concat( config.output ) )
       // .pipe( uglify() )
