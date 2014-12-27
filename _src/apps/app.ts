@@ -1,15 +1,20 @@
-/// <reference path="../../lib.d/lodash.d.ts" />
+/// <reference path="other_app.ts" />
+/// <reference path="../../lib.d/_app.d.ts" />
 
-import _ = require('lodash');
+// import _ = require('lodash');
+// import otherApp = require('other_app');
 
 module App {
 
-  var firstName = function (names: Array<String>): String {
-    return 'hello' + _.head(names);
+  var firstName = function (names: Array<String>) {
+    // return 'hello' + _.head(names);
+    console.log('I was called!');
   };
 
-  export var start = function () {
+  export function start() {
     firstName(['cedric', 'cogell']);
   };
 
 }
+
+App.start();

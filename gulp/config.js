@@ -8,10 +8,7 @@ module.exports = {
 
   copy: {
     src: [
-      src + '/index.html',
-      src + '/index.js',
-      src + '/require.config.js',
-      'node_modules/requirejs/require.js'
+      src + '/index.html'
     ],
     dest: dest
   },
@@ -22,10 +19,16 @@ module.exports = {
     opts: {
       declarationFiles: false,
       noExternalResolve: false,
-      sortOutput: false,
-      module: 'amd',
+      sortOutput: true,
+      module: 'commonjs', // not used
       target: 'ES5'
     }
+  },
+
+  concat: {
+    // use typescript output stream as src
+    dest: dest,
+    output: 'app.min.js'
   },
 
   browser_sync: {
