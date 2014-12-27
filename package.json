@@ -7,14 +7,24 @@
     "test": "gulp test",
     "start": "gulp watch"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cogell/frontend_stack.git"
+  },
   "author": "B. Cedric Cogell",
   "license": "CC",
   "devDependencies": {
+    "browserify": "^8.0.2",
     "event-stream": "^3.1.7",
     "gulp": "^3.8.10",
+    "gulp-notify": "^2.1.0",
     "gulp-typescript": "^2.3.0",
+    "gulp-util": "^3.0.1",
+    "pretty-hrtime": "^0.2.2",
     "ramda": "^0.8.0",
     "require-dir": "^0.1.0",
-    "typescript": "^1.3.0"
+    "typescript": "^1.3.0",
+    "vinyl-source-stream": "^1.0.0",
+    "watchify": "^2.2.1"
   }
 }
