@@ -97,3 +97,9 @@ Cons:
 ## Keywords
 - [MVI](http://futurice.com/blog/reactive-mvc-and-the-virtual-dom)
 - [ES6](http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29)
+
+
+## TODOs
+
+- add clean task
+- add libsass task
