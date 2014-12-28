@@ -1,6 +1,7 @@
 var src  = '_src';
 var dest = '_dist';
-var lib  = 'node_modules';
+var nodeModules = 'node_modules';
+var vDOM = '/' + nodeModules + '/virtual-dom';
 
 module.exports = {
   src: src,
@@ -17,11 +18,14 @@ module.exports = {
   },
 
   typescript: {
-    src: src + '/**/*.ts',
+    src: [
+      src + '/**/*.ts',
+      'lib.d/**'
+    ],
     dest: dest,
     opts: {
       declarationFiles: false,
-      noExternalResolve: false,
+      noExternalResolve: true,
       sortOutput: false,
       module: 'amd',
       target: 'ES5'
@@ -30,7 +34,7 @@ module.exports = {
 
   browser_sync: {
     server: {
-      baseDir: ["_dist", "node_modules"],
+      baseDir: [ dest, nodeModules],
     },
     files: [
       dest + '/**'
@@ -39,6 +43,22 @@ module.exports = {
 
   clean: {
     delete: [ dest ]
+  },
+
+  browserify: {
+    // A separate bundle will be generated for each
+    // bundle config in the list below
+    bundleConfigs: [{
+      // virtual-dom/h
+      entries: vDOM + '/h.js',
+      dest: dest,
+      outputName: 'h.js'
+    }, {
+      // virtual-dom/diff
+      entries: vDOM + '/diff.js',
+      dest: dest,
+      outputName: 'diff.js'
+    }]
   }
 
 };

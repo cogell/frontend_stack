@@ -1,3 +1,5 @@
+var requirejs = require('requirejs');
+
 require(['require.config'], function () {
 
   require([
