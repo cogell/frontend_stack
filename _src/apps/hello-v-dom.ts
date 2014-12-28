@@ -8,6 +8,10 @@ import createElement = require('../libs/create-element');
 function render(count) {
   return h('div', {
       style: {
+        'text-align': 'center',
+        'line-height': (100 + count)+ 'px',
+        width: (100 + count)+ 'px',
+        height: (100 + count)+ 'px',
         border: '1px solid red'
       }
     }, [String(count)]);
@@ -20,8 +24,6 @@ var rootNode = createElement(tree);
 document.body.appendChild(rootNode);
 
 function renderStep(){
-  console.log('count fired');
-
   count++;
 
   var newTree = render(count);
@@ -30,6 +32,4 @@ function renderStep(){
   tree = newTree;
 }
 
-export function start(){
-  setInterval( renderStep, 1000)
-};
+setInterval( renderStep, 1000);
