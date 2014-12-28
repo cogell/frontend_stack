@@ -15,6 +15,7 @@
 
 - optional typing
 - ES6 features
+- [lang spec](http://www.typescriptlang.org/Content/TypeScript%20Language%20Specification.pdf)
 
 
 ### Streams & Pipes
@@ -25,11 +26,14 @@
 
 ### Functional
 
+You have no good reason (anymore) not to use lodash (unless you are working on a legacy version of Backbone/NodeJS then maybe)
+
+- [underscore](http://underscorejs.org/)
 - [lo_dash](https://lodash.com/)
 - [Ramda](http://ramdajs.com/)
 
 
-### Task Runner: Gulp
+### Task Runner
 
 I dont care what you use but use something even just npm scripts are cool.  I prefer Gulp.
 
@@ -100,6 +104,7 @@ Cons:
 
 
 ## TODOs
-
-- add clean task
+- add css imports into amd??
 - add libsass task
+- add virtual-dom library
+- add RxJS (react-extensions) library

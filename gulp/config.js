@@ -35,6 +35,10 @@ module.exports = {
     files: [
       dest + '/**'
     ]
+  },
+
+  clean: {
+    delete: [ dest ]
   }
 
 };
