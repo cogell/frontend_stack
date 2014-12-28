@@ -104,7 +104,8 @@ Cons:
 
 
 ## TODOs
+- add RxJS (react-extensions) library
+- add types to virtual-dom libraries?
+- make PR for virtual-dom amd dist?
 - add css imports into amd??
 - add libsass task
-- add virtual-dom library
-- add RxJS (react-extensions) library

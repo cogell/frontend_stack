@@ -8,8 +8,8 @@ import createElement = require('../libs/create-element');
 function render(count) {
   return h('div', {
       style: {
-        'text-align': 'center',
-        'line-height': (100 + count)+ 'px',
+        textAlign: 'center',
+        lineHeight: (100 + count)+ 'px',
         width: (100 + count)+ 'px',
         height: (100 + count)+ 'px',
         border: '1px solid red'
