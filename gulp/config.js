@@ -30,7 +30,7 @@ module.exports = {
 
   browser_sync: {
     server: {
-      baseDir: [dest, lib, src]
+      baseDir: ["_dist", "node_modules"],
     },
     files: [
       dest + '/**'
