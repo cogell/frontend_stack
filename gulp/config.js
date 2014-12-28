@@ -1,7 +1,8 @@
 var src  = '_src';
 var dest = '_dist';
+var bundleDest = dest + '/libs';
 var nodeModules = 'node_modules';
-var vDOM = '/' + nodeModules + '/virtual-dom';
+var vDOM = './' + nodeModules + '/virtual-dom';
 
 module.exports = {
   src: src,
@@ -34,7 +35,7 @@ module.exports = {
 
   browser_sync: {
     server: {
-      baseDir: [ dest, nodeModules],
+      baseDir: [ dest, nodeModules]
     },
     files: [
       dest + '/**'
@@ -51,13 +52,27 @@ module.exports = {
     bundleConfigs: [{
       // virtual-dom/h
       entries: vDOM + '/h.js',
-      dest: dest,
+      dest: bundleDest,
+      standalone: 'h',
       outputName: 'h.js'
     }, {
       // virtual-dom/diff
       entries: vDOM + '/diff.js',
-      dest: dest,
+      dest: bundleDest,
+      standalone: 'diff',
       outputName: 'diff.js'
+    }, {
+      // virtual-dom/patch
+      entries: vDOM + '/patch.js',
+      dest: bundleDest,
+      standalone: 'patch',
+      outputName: 'patch.js'
+    }, {
+      // virtual-dom/diff
+      entries: vDOM + '/create-element.js',
+      dest: bundleDest,
+      standalone: 'create-element',
+      outputName: 'create-element.js'
     }]
   }
 

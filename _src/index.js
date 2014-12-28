@@ -1,10 +1,9 @@
-var requirejs = require('requirejs');
-
 require(['require.config'], function () {
 
   require([
 
-      'apps/app'
+      'apps/app',
+      'apps/hello-v-dom'
 
     ], function (App) {
 

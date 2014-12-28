@@ -3,6 +3,7 @@ var config     = require('../../config')[taskname];
 var gulp       = require('gulp');
 var browserify = require('browserify');
 var source     = require('vinyl-source-stream');
+var derequire  = require('gulp-derequire');
 
 var bundleLogger = require('../../util/bundle-logger');
 var handleErrors = require('../../util/handle-errors');
@@ -16,6 +17,8 @@ gulp.task( taskname, function (callback) {
     var bundler = browserify({
       // Specify the entry point of your app
       entries: bundleConfig.entries,
+      // When standalone is a non-empty string, a standalone module is created with that name and a umd wrapper
+      standalone: bundleConfig.standalone
     });
 
     var bundle = function() {
@@ -30,6 +33,8 @@ gulp.task( taskname, function (callback) {
         // stream gulp compatible. Specifiy the
         // desired output filename here.
         .pipe(source(bundleConfig.outputName))
+        // Lets bundle be required other amd/commonjs packages
+        .pipe(derequire())
         // Specify the output destination
         .pipe(gulp.dest(bundleConfig.dest))
         .on('end', reportFinished);
