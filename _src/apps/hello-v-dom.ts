@@ -1,9 +1,11 @@
-/// <reference path="../../lib.d/_app.d.ts" />
+/// <reference path="../../lib.d/tsd.d.ts" />
 
-import h             = require('../libs/h');
-import diff          = require('../libs/diff');
-import patch         = require('../libs/patch');
-import createElement = require('../libs/create-element');
+import h             = require('h');
+import diff          = require('diff');
+import patch         = require('patch');
+import createElement = require('create-element');
+
+// from: https://github.com/Matt-Esch/virtual-dom
 
 function render(count) {
   return h('div', {

@@ -1,4 +1,4 @@
-/// <reference path="../../lib.d/_app.d.ts" />
+/// <reference path="../../lib.d/tsd.d.ts" />
 
 import _ = require('lodash');
 
