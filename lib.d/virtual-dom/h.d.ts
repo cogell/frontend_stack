@@ -13,7 +13,7 @@ declare module 'h' {
     namespace: any; // String | null
   }
 
-  function h(tagSelector: String, properties?: {}, children?: Array<VTree>): VNode;
+  function h(tagSelector?: String, properties?: {}, children?: Array<VTree>): VNode;
 
   export = h;
 }

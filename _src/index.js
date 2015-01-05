@@ -2,13 +2,13 @@ require(['require.config'], function () {
 
   require([
 
-      'apps/app',
-      'apps/hello-v-dom',
-      'apps/hello-rx'
+      'apps/mvi-example/app',
+      // 'apps/hello-v-dom',
+      // 'apps/hello-rx'
 
     ], function (App) {
 
-      App.start();
+      window.onload = App.start();
 
     });
 

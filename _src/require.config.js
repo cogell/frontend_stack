@@ -8,6 +8,7 @@ require.config({
     'h': '/libs/h',
     'diff': '/libs/diff',
     'patch': '/libs/patch',
-    'create-element': '/libs/create-element'
+    'create-element': '/libs/create-element',
+    'dom-delegator': '/libs/dom-delegator'
   }
 });

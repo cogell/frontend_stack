@@ -47,8 +47,7 @@ module.exports = {
   },
 
   browserify: {
-    // A separate bundle will be generated for each
-    // bundle config in the list below
+    // A separate bundle will be generated for each item in the bundleConfigs array
     bundleConfigs: [{
       // virtual-dom/h
       entries: vDOM + '/h.js',
@@ -73,6 +72,12 @@ module.exports = {
       dest: bundleDest,
       standalone: 'create-element',
       outputName: 'create-element.js'
+    }, {
+      // dom-delegator
+      entries: './' + nodeModules + '/dom-delegator/dom-delegator.js',
+      dest: bundleDest,
+      standalone: 'dom-delegator',
+      outputName: 'dom-delegator.js'
     }]
   }
 
