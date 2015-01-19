@@ -16,7 +16,7 @@ function render(count) {
         height: (100 + count)+ 'px',
         border: '1px solid red'
       }
-    }, [String(count)]);
+    }, String(count));
 }
 
 var count = 0;

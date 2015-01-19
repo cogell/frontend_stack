@@ -308,8 +308,8 @@ declare module Rx {
 		scan<TAcc>(seed: TAcc, accumulator: (acc: TAcc, value: T) => TAcc): Observable<TAcc>;
 		scan(accumulator: (acc: T, value: T) => T): Observable<T>;
 		skipLast(count: number): Observable<T>;
-		startWith(...values: T[]): Observable<T>;
 		startWith(scheduler: IScheduler, ...values: T[]): Observable<T>;
+		startWith(...values: T[]): Observable<T>;
 		takeLast(count: number): Observable<T>;
 		takeLastBuffer(count: number): Observable<T[]>;
 

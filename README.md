@@ -2,6 +2,8 @@
 
 ## Libraries > Frameworks
 
+- [Removing User Interface Complexity, or Why React is Awesome](http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome)
+
 - [you have ruined javascript](http://codeofrob.com/entries/you-have-ruined-javascript.html)
 
 - [No more JS frameworks](http://bitworking.org/news/2014/05/zero_framework_manifesto)

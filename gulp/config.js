@@ -8,15 +8,17 @@ module.exports = {
   src: src,
   dest: dest,
 
-  copy: {
-    src: [
-      src + '/index.html',
-      src + '/index.js',
-      src + '/require.config.js',
-      'node_modules/requirejs/require.js'
-    ],
-    dest: dest
-  },
+  copy: [
+    {
+      src: [
+        src + '/index.html',
+        src + '/index.js',
+        src + '/require.config.js',
+        'node_modules/requirejs/require.js'
+      ],
+      dest: dest
+    }
+  ],
 
   typescript: {
     src: [

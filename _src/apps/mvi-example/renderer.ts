@@ -25,11 +25,11 @@ function renderVTreeStream(vtree$, containerSelector) {
 
   container.innerHTML = '';
 
-  // make the DOME node bound to the VDOM node
+  // make the DOM node bound to the VDOM node
   var rootNode = <HTMLElement>window.document.createElement('div');
   container.appendChild(rootNode);
   vtree$.startWith(h())
-    .bufferWithCound(2,1)
+    .bufferWithCount(2,1)
     .subscribe(function (buffer){
       try {
         var oldVTree = buffer[0];
@@ -47,4 +47,3 @@ export function init() {
   delegator = new DOMDelegator();
   renderVTreeStream(ItemsView.vtree$, '.js-container');
 }
-
