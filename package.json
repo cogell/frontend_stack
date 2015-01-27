@@ -29,6 +29,8 @@
     "merge-stream": "^0.1.7",
     "pretty-hrtime": "^0.2.2",
     "ramda": "^0.8.0",
+    "react": "^0.12.2",
+    "react-tools": "^0.12.2",
     "require-dir": "^0.1.0",
     "requirejs": "^2.1.15",
     "run-sequence": "^1.0.2",

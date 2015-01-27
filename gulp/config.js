@@ -23,7 +23,7 @@ module.exports = {
   typescript: {
     src: [
       // src + '/**/*.ts',
-      src + '/apps/testES6.ts',
+      src + '/apps/css-in-js-test/**/*.ts',
       'lib.d/**'
     ],
     dest: dest,
@@ -32,7 +32,7 @@ module.exports = {
       noExternalResolve: true,
       sortOutput: false,
       module: 'amd',
-      target: 'ES6'
+      target: 'ES5'
     }
   },
 

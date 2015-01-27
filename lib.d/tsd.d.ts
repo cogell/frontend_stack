@@ -3,6 +3,8 @@
 /// <reference path="virtual-dom/patch.d.ts" />
 /// <reference path="virtual-dom/create-element.d.ts" />
 
+/// <reference path="react/react.d.ts" />
+
 /// <reference path="lodash/lodash.d.ts" />
 /// <reference path="rx/rx.lite.d.ts" />
 /// <reference path="rx/rx.async-lite.d.ts" />

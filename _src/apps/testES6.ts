@@ -8,10 +8,3 @@ function f() {
 
   console.log(x);
 }
-
-
-function* idMaker(){
-  var index = 0;
-  while(true)
-      yield index++;
-}

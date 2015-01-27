@@ -15,6 +15,10 @@ If we are going to choose a collection of libraries to use over a framework or t
 
 tl;dr no one size fits all, just like no one framework to rule them all
 
+### Arch: Decouple Components from Pages (unfinished)
+- noticed this problem working on avant, wanted to create a view request API. but what would be even better would be components that knew how to render themselves like React, Web Components, Angular Directives, etc
+
+
 ## Features
 
 mori
@@ -77,6 +81,27 @@ Sooo, we got to choice between:
 
 Each has its +'s and -'s.  For a deeper look at each check out: [link to internal doc]().
 
+### CSS/Styling
+
+huge huge, mess. tons of solutions and they all don't serve all the problems of CSS
+
+From @vjeux's [React: CSS in JS](https://speakerdeck.com/vjeux/react-css-in-js)
+> Problems with CSS:
+> - global namespace
+> - dependencies
+> - dead code elimination
+> - minification
+> - sharing constants
+> - non-deterministic resolution
+> - isolation
+
+DSL's To Chose From:
+- Sass
+- Less
+- Stylus
+- Javascript
+
+I wanna try: [restyle](https://github.com/WebReflection/restyle)
 
 ## Keywords
 - [MVI](http://futurice.com/blog/reactive-mvc-and-the-virtual-dom)

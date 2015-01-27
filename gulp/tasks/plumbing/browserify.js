@@ -4,6 +4,8 @@ var gulp       = require('gulp');
 var browserify = require('browserify');
 var source     = require('vinyl-source-stream');
 var derequire  = require('gulp-derequire');
+var map        = require('lodash.map');
+var merge      = require('merge-stream');
 
 var bundleLogger = require('../../util/bundle-logger');
 var handleErrors = require('../../util/handle-errors');

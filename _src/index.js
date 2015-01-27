@@ -2,13 +2,12 @@ require(['require.config'], function () {
 
   require([
 
-      'apps/mvi-example/app',
-      // 'apps/hello-v-dom',
-      // 'apps/hello-rx'
+      // 'apps/css-in-js-test/reactCSS',
+      'apps/hello-v-dom'
 
     ], function (App) {
 
-      window.onload = App.start();
+      // window.onload = App.start();
 
     });
 
