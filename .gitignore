@@ -1,3 +1,9 @@
+# NPM Files #
 npm-debug.log
 node_modules
+
+# Output/Build #
 _dist
+
+# Dev Work #
+docs/_private.md
