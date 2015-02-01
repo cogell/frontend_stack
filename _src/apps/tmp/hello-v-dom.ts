@@ -1,4 +1,4 @@
-/// <reference path="../../lib.d/tsd.d.ts" />
+/// <reference path="../../../lib.d/tsd.d.ts" />
 
 import h             = require('h');
 import diff          = require('diff');

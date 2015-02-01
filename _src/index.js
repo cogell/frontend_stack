@@ -2,8 +2,7 @@ require(['require.config'], function () {
 
   require([
 
-      // 'apps/css-in-js-test/reactCSS',
-      'apps/hello-v-dom'
+      'apps/react/example',
 
     ], function (App) {
 

@@ -9,6 +9,8 @@ require.config({
     'diff': '/libs/diff',
     'patch': '/libs/patch',
     'create-element': '/libs/create-element',
-    'dom-delegator': '/libs/dom-delegator'
+    'dom-delegator': '/libs/dom-delegator',
+
+    'react': 'react/dist/react.min'
   }
 });

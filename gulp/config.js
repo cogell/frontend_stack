@@ -10,20 +10,49 @@ module.exports = {
 
   copy: [
     {
-      src: [
-        src + '/index.html',
-        src + '/index.js',
-        src + '/require.config.js',
-        'node_modules/requirejs/require.js'
-      ],
+      src: src + '/index.html',
+      dest: dest
+    },
+    {
+      src: 'node_modules/requirejs/require.js',
+      dest: dest
+    },
+    {
+      src: src + '/*.js',
       dest: dest
     }
   ],
 
+  javascript: {
+    src: [
+      src + '/apps/**/*.js',
+      src + '/apps/**/*.jsx'
+    ],
+    dest: dest + '/apps',
+    watch: {
+      task: 'javascript'
+    }
+  },
+
+  jsx: {
+    src: [
+      src + '/apps/**/*.jsx'
+    ],
+    dest: dest + '/apps',
+  },
+
+  wrap: {
+    src: [
+      src + '/apps/**/*.js'
+    ],
+    dest: dest + '/apps',
+    wrapText: 'define(function(require){\n <%= contents %> \n});'
+  },
+
   typescript: {
     src: [
-      // src + '/**/*.ts',
-      src + '/apps/css-in-js-test/**/*.ts',
+      src + '/apps/app.ts',
+      src + '/apps/react/**/*.ts',
       'lib.d/**'
     ],
     dest: dest,
@@ -46,10 +75,12 @@ module.exports = {
   },
 
   clean: {
-    delete: [ dest ]
+    src: [ dest ]
   },
 
   browserify: {
+    // causes this task not to run
+    noop: true,
     // A separate bundle will be generated for each item in the bundleConfigs array
     bundleConfigs: [{
       // virtual-dom/h

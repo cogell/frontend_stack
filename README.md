@@ -109,8 +109,20 @@ I wanna try: [restyle](https://github.com/WebReflection/restyle)
 
 
 ## TODOs
+- spike running dev tasks in docker
+
+- spike Flow
+- spike css in components
+  - webpack
+  - requirejs css require
+  - restyle
+
 - add RxJS (react-extensions) library
 - add types to virtual-dom libraries?
 - make PR for virtual-dom amd dist?
 - add css imports into amd??
 - add libsass task
+
+### Task Runner
+- renaming js files do not get picked up by watcher
+- figure out how to share/merge streams across tasks (perhaps each task outputs a 'runner' function)

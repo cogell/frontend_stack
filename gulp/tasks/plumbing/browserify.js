@@ -12,6 +12,12 @@ var handleErrors = require('../../util/handle-errors');
 
 gulp.task( taskname, function (callback) {
 
+  // if noop is true dont run task
+  if ( config.noop ) {
+    callback();
+    return;
+  }
+
   var bundleQueue = config.bundleConfigs.length;
 
   var browserifyThis = function(bundleConfig) {

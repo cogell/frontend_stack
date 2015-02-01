@@ -11,7 +11,7 @@ gulp.task( taskname, function () {
       .pipe( gulp.dest( config.dest ) );
   };
 
-  var streams = map(config.tasks, copyThis);
+  var streams = map(config, copyThis);
 
   return merge(streams);
 
