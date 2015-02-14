@@ -18,9 +18,11 @@
     "browserify": "^8.0.2",
     "del": "^1.1.1",
     "derequire": "^1.2.0",
+    "eslint": "^0.14.1",
     "event-stream": "^3.1.7",
     "gulp": "^3.8.10",
     "gulp-derequire": "^2.0.0",
+    "gulp-eslint": "^0.4.2",
     "gulp-filter": "^2.0.0",
     "gulp-notify": "^2.1.0",
     "gulp-react": "^2.0.0",
@@ -43,6 +45,7 @@
   },
   "dependencies": {
     "dom-delegator": "^12.0.0",
+    "js-csp": "^0.3.3",
     "lodash": "^2.4.1",
     "rx": "^2.3.22",
     "virtual-dom": "0.0.24"

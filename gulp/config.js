@@ -80,9 +80,15 @@ module.exports = {
 
   browserify: {
     // causes this task not to run
-    noop: true,
+    noop: false,
     // A separate bundle will be generated for each item in the bundleConfigs array
     bundleConfigs: [{
+      // csp library
+      entries: './' + nodeModules + '/js-csp/src/csp.js',
+      dest: bundleDest,
+      standalone: 'csp',
+      outputName: 'csp.js'
+    },{
       // virtual-dom/h
       entries: vDOM + '/h.js',
       dest: bundleDest,

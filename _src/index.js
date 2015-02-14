@@ -2,7 +2,7 @@ require(['require.config'], function () {
 
   require([
 
-      'apps/react/example',
+      'apps/csp-example/pingpong',
 
     ], function (App) {
 

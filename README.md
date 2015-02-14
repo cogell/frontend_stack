@@ -109,6 +109,7 @@ I wanna try: [restyle](https://github.com/WebReflection/restyle)
 
 
 ## TODOs
+- check out eslint to replace jsxhint
 - spike running dev tasks in docker
 
 - spike Flow

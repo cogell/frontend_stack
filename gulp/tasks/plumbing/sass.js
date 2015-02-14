@@ -1,7 +1,8 @@
 var taskname = require('path').basename(__filename, '.js');
 var config   = require('../../config')[taskname];
 var gulp     = require('gulp');
-var sass     = require('gulp-sass');
+// var sass     = require('gulp-sass');
+var sass = function(){};
 
 gulp.task( taskname, function () {
 
