@@ -80,7 +80,7 @@ module.exports = {
 
   browserify: {
     // causes this task not to run
-    noop: false,
+    noop: true,
     // A separate bundle will be generated for each item in the bundleConfigs array
     bundleConfigs: [{
       // csp library
