@@ -3,7 +3,7 @@ var config = require('../config');
 var gulp = require('gulp');
 var map = require('lodash.map');
 
-gulp.task( taskname, ['browser_sync'], function () {
+gulp.task( taskname, ['webpack-dev-server'], function () {
 
   // watch all config objs that have a "watch" prop
   map(config, function (config) {

@@ -108,9 +108,6 @@ I wanna try: [restyle](https://github.com/WebReflection/restyle)
 
 
 ## TODOs
-- clean out all the crap that isnt needed on this branch
-- move gulpfile.js into runner/
-- remove .scss off style require lines
 - spike running dev tasks in docker
 
 - spike Flow

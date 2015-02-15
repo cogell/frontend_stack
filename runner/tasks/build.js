@@ -3,5 +3,5 @@ var taskname = require('path').basename(__filename, '.js');
 var runSequence = require('run-sequence');
 
 gulp.task( taskname, ['clean'], function (cb) {
-  runSequence(['template', 'webpack-dev'], cb);
+  runSequence(['template', 'webpack-build'], cb);
 });
