@@ -4,8 +4,9 @@
   "description": "some hello world and exploration of my personal javascript stack (work in progress)",
   "main": "src/index.html",
   "scripts": {
-    "test": "gulp test",
-    "start": "gulp watch"
+    "test": "gulp --gulpfile ./runner/gulpfile.js --cwd . test",
+    "start": "gulp --gulpfile ./runner/gulpfile.js --cwd . watch",
+    "build": "gulp --gulpfile ./runner/gulpfile.js --cwd . build"
   },
   "repository": {
     "type": "git",
@@ -22,8 +23,10 @@
     "gulp-template": "^3.0.0",
     "gulp-util": "^3.0.3",
     "jsx-loader": "^0.12.2",
+    "lodash": "^3.2.0",
     "lodash.assign": "^3.0.0",
     "lodash.map": "^2.4.1",
+    "lodash.template": "^3.2.0",
     "react-tools": "^0.12.2",
     "require-dir": "^0.1.0",
     "run-sequence": "^1.0.2",
