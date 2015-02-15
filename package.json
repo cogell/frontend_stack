@@ -23,11 +23,8 @@
     "gulp-template": "^3.0.0",
     "gulp-util": "^3.0.3",
     "jsx-loader": "^0.12.2",
-    "lodash": "^3.2.0",
     "lodash.assign": "^3.0.0",
     "lodash.map": "^2.4.1",
-    "lodash.template": "^3.2.0",
-    "react-tools": "^0.12.2",
     "require-dir": "^0.1.0",
     "run-sequence": "^1.0.2",
     "sass-loader": "^0.4.0-beta.1",
@@ -36,6 +33,7 @@
     "webpack-dev-server": "^1.7.0"
   },
   "dependencies": {
-    "react": "^0.12.2"
+    "react": "^0.12.2",
+    "react-tools": "^0.12.2"
   }
 }
