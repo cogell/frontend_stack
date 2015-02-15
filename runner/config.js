@@ -20,7 +20,7 @@ var webpackConfig = {
   },
   resolve: {
     // you can now require('file') instead of require('file.json')
-    extensions: ['', '.js', '.json']
+    extensions: ['', '.js', '.json', '.scss']
   },
   plugins: []
 }

@@ -13,6 +13,7 @@ gulp.task( taskname, ['template'], function () {
 
   // Start webpack-dev-server
   new WebpackDevServer(webpack(config), {
+    contentBase: '_dist/',
     stats: {
       colors: true
     }

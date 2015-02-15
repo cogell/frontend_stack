@@ -6,7 +6,7 @@ var CommentBox = React.createClass({
   render: function() {
     return (
       <div className="commentBox">
-        Hello, world! I am a CommentBox.
+        Hi, world! I am a CommentBox.
       </div>
     );
   }
@@ -14,14 +14,5 @@ var CommentBox = React.createClass({
 
 React.render(
   <CommentBox />,
-  document.getElementById('content')
+  document.body
 );
-
-
-// Playing with flow
-
-function foo(x) {
-  return x * 10;
-}
-
-foo('Hello, world!');

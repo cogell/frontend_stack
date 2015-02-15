@@ -14,19 +14,16 @@
   "author": "B. Cedric Cogell",
   "license": "CC",
   "devDependencies": {
-    "browser-sync": "^1.8.2",
     "css-loader": "^0.9.1",
     "del": "^1.1.1",
     "eslint": "^0.11.0-alpha.0",
     "gulp": "^3.8.10",
-    "gulp-derequire": "^2.0.0",
     "gulp-eslint": "^0.4.2",
     "gulp-template": "^3.0.0",
     "gulp-util": "^3.0.3",
     "jsx-loader": "^0.12.2",
     "lodash.assign": "^3.0.0",
     "lodash.map": "^2.4.1",
-    "react": "^0.12.2",
     "react-tools": "^0.12.2",
     "require-dir": "^0.1.0",
     "run-sequence": "^1.0.2",
@@ -35,5 +32,7 @@
     "webpack": "^1.5.3",
     "webpack-dev-server": "^1.7.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react": "^0.12.2"
+  }
 }
