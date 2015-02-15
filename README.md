@@ -18,7 +18,6 @@ tl;dr no one size fits all, just like no one framework to rule them all
 ### Arch: Decouple Components from Pages (unfinished)
 - noticed this problem working on avant, wanted to create a view request API. but what would be even better would be components that knew how to render themselves like React, Web Components, Angular Directives, etc
 
-
 ## Features
 
 mori
@@ -109,7 +108,9 @@ I wanna try: [restyle](https://github.com/WebReflection/restyle)
 
 
 ## TODOs
-- check out eslint to replace jsxhint
+- clean out all the crap that isnt needed on this branch
+- move gulpfile.js into runner/
+- remove .scss off style require lines
 - spike running dev tasks in docker
 
 - spike Flow

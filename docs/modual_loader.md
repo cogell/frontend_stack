@@ -48,6 +48,7 @@ Cons:
 ## webpack (never used it)
 
 Pros:
-- lost of cool loaders for requiring styles, imgs, fonts, etc
+- lots of cool loaders for requiring styles, imgs, fonts, etc
+- can replace a lot of gulp tasks
 
 Cons:

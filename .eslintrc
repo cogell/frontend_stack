@@ -5,6 +5,7 @@
   },
   "rules": {
     "strict": 0,
+    "no-unused-vars": 0, // remove once this issue is fixed for jsx
     "no-multi-str": 0,
     "quotes": [2, "single"]
   },

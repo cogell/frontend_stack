@@ -1,3 +1,5 @@
+/* @flow */
+
 var React = require('react');
 
 var CommentBox = React.createClass({
@@ -14,3 +16,12 @@ React.render(
   <CommentBox />,
   document.getElementById('content')
 );
+
+
+// Playing with flow
+
+function foo(x) {
+  return x * 10;
+}
+
+foo('Hello, world!');

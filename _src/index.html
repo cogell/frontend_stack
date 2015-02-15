@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Frontend Stack</title>
+  <title></title>
 </head>
 <body>
-  <div id="example"></div>
-  <script data-main="index.js" src="require.js"></script>
+  <% _.forEach(scripts, function(script) { %><script src='<%= script %>'></script><% }); %>
 </body>
 </html>

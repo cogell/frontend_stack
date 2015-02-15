@@ -1,4 +1,4 @@
-var src  = '_src';
+var src = '_src';
 var dest = '_dist';
 var bundleDest = dest + '/libs';
 var nodeModules = 'node_modules';
@@ -7,6 +7,18 @@ var vDOM = './' + nodeModules + '/virtual-dom';
 module.exports = {
   src: src,
   dest: dest,
+
+  template: {
+    src: src + '/index.html',
+    dest: dest,
+    scripts: [
+      'http://localhost:8080/webpack-dev-server.js',
+      'bundle.js'
+    ],
+    watch: {
+      task: 'template'
+    }
+  },
 
   copy: [
     {
@@ -38,7 +50,7 @@ module.exports = {
     src: [
       src + '/apps/**/*.jsx'
     ],
-    dest: dest + '/apps',
+    dest: dest + '/apps'
   },
 
   wrap: {
