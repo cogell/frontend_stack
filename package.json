@@ -2,6 +2,7 @@
   "name": "frontend_stack",
   "version": "0.0.1",
   "description": "some hello world and exploration of my personal javascript stack (work in progress)",
+  "private": true,
   "main": "src/index.html",
   "scripts": {
     "test": "gulp --gulpfile ./runner/gulpfile.js --cwd . test",

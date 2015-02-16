@@ -61,7 +61,11 @@ var gulpTasksConfig = {
       path: '/',
     },
     devtool: 'sourcemap',
-    debug: true
+    debug: true,
+    watch: true,
+    plugins: [
+       new webpack.OldWatchingPlugin()
+    ]
   }),
 
   clean: {

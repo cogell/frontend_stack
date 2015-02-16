@@ -1,0 +1,13 @@
+dev:
+  build: .
+  volumes_from:
+    - data
+  ports:
+    - "49080:8080"
+
+data:
+  image: busybox
+  volumes:
+    - ./_src/:/app/_src
+    - ./runner/:/app/runner
+  entrypoint: true
