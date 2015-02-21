@@ -23,6 +23,7 @@
     "gulp-eslint": "^0.4.2",
     "gulp-template": "^3.0.0",
     "gulp-util": "^3.0.3",
+    "jest-cli": "^0.4.0",
     "jsx-loader": "^0.12.2",
     "lodash.assign": "^3.0.0",
     "lodash.map": "^2.4.1",
@@ -36,5 +37,13 @@
   "dependencies": {
     "react": "^0.12.2",
     "react-tools": "^0.12.2"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/runner/scripts/preprocessor.js",
+    "testPathDirs": ["<rootDir>/_src"],
+    "testDirectoryName": "_src",
+    "testFileExtensions": ["test.js"],
+    "unmockedModulePathPatterns": ["react"],
+    "moduleFileExtensions": ["js", "json", "scss"]
   }
 }

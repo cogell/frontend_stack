@@ -1,5 +1,5 @@
 var React = require('react');
-var Post = require('./post/post');
+var Post = require('./post/post.component');
 
 var Posts = React.createClass({
 

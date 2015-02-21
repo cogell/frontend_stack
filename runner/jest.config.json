@@ -1,5 +1,0 @@
-{
-  "testPathDirs": ["./../_src"],
-  "testDirectoryName": "_src",
-  "testFileExtensions": ["test.js"]
-}

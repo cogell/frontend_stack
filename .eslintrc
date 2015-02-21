@@ -11,6 +11,10 @@
   },
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "jasmine": true
+  },
+  "globals": {
+    "jest": true
   }
 }

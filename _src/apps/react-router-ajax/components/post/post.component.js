@@ -1,7 +1,7 @@
 var React = require('react');
 require('./post.style');
 
-var Post: ReactClass = React.createClass({
+var Post = React.createClass({
   propTypes: {
     name: React.PropTypes.string
   },
