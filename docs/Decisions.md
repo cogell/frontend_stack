@@ -12,6 +12,12 @@
 - typescript doesn't support many es6 features yet
 
 
+## <Nothing> over Flow
+- couldn't get simple react code (from tutorials) to typecheck without errors
+- documentation on flow is sooooo sparse
+- no/small community support at the moment
+
+
 ## ESLint over JSHint
 - eslint supports jsx
 - eslint supports es6

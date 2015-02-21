@@ -1,12 +1,19 @@
-/* @flow */
-
 var React = require('react');
 
-var Post = React.createClass({
+var Post: ReactClass = React.createClass({
+  propTypes: {
+    name: React.PropTypes.string
+  },
 
-  render() {
+  getDefaultProps: function () {
+    return {
+      name: 'Cedric'
+    };
+  },
+
+  render: function () {
     return (
-      <div>sup?</div>
+      <div>Hello, {this.props.name}</div>
     );
   }
 

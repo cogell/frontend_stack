@@ -1,5 +1,3 @@
-/* @flow */
-
 var React = require('react');
 var RootComponent = require('./components/Root');
 

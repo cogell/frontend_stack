@@ -1,5 +1,3 @@
-/* @flow */
-
 var React = require('react');
 var Post = require('./Post');
 
