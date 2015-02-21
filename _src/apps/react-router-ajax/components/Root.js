@@ -1,11 +1,11 @@
 var React = require('react');
-var Post = require('./Post');
+var Posts = require('./posts');
 
 var Root = React.createClass({
 
   render: function () {
     return (
-      <Post/>
+      <Posts />
     );
   }
 

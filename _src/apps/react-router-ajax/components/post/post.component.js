@@ -1,4 +1,5 @@
 var React = require('react');
+require('./post.style');
 
 var Post: ReactClass = React.createClass({
   propTypes: {
@@ -13,7 +14,7 @@ var Post: ReactClass = React.createClass({
 
   render: function () {
     return (
-      <div>Hello, {this.props.name}</div>
+      <div className="cogell-post">Hello, {this.props.name}</div>
     );
   }
 
