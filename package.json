@@ -35,15 +35,26 @@
     "webpack-dev-server": "^1.7.0"
   },
   "dependencies": {
+    "qwest": "^1.5.4",
     "react": "^0.12.2",
     "react-tools": "^0.12.2"
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/runner/scripts/preprocessor.js",
-    "testPathDirs": ["<rootDir>/_src"],
+    "testPathDirs": [
+      "<rootDir>/_src"
+    ],
     "testDirectoryName": "_src",
-    "testFileExtensions": ["test.js"],
-    "unmockedModulePathPatterns": ["react"],
-    "moduleFileExtensions": ["js", "json", "scss"]
+    "testFileExtensions": [
+      "test.js"
+    ],
+    "unmockedModulePathPatterns": [
+      "react"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "scss"
+    ]
   }
 }

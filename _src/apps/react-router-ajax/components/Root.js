@@ -1,11 +1,11 @@
 var React = require('react');
-var Posts = require('./posts');
+var Edit = require('./edit/edit.component');
 
 var Root = React.createClass({
 
   render: function () {
     return (
-      <Posts />
+      <Edit />
     );
   }
 

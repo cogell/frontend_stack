@@ -12,6 +12,10 @@ var Post = React.createClass({
     };
   },
 
+  componentDidMount: function () {
+
+  },
+
   render: function () {
     return (
       <div className="cogell-post">Hello, {this.props.name}</div>
