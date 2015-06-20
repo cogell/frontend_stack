@@ -18,6 +18,27 @@ tl;dr no one size fits all, just like no one framework to rule them all
 ### Arch: Decouple Components from Pages (unfinished)
 - noticed this problem working on avant, wanted to create a view request API. but what would be even better would be components that knew how to render themselves like React, Web Components, Angular Directives, etc
 
+## Goals
+
+### Product Goals
+- server side rendering
+- long term support
+- browser support latest two versions
+- no page reflow on async rendering of elements
+  - no choppy page loads/transitions
+
+### Developer Goals
+- write ES20XX today
+- locally scoped styles
+- robust async handling
+- reactive and declarative programming
+- documentation of decisions
+- detailed git commits
+- containerized build
+- containerized development
+- live-reload on file change
+- value readability over DRYness/cleverness
+
 
 ## Features
 
