@@ -26,6 +26,10 @@ tl;dr no one size fits all, just like no one framework to rule them all
 - browser support latest two versions
 - no page reflow on async rendering of elements
   - no choppy page loads/transitions
+- offline support/messaging
+- < 1 second load
+- mobile friendly
+- sensitive to user's bandwidth
 
 ### Developer Goals
 - write ES20XX today
@@ -39,8 +43,10 @@ tl;dr no one size fits all, just like no one framework to rule them all
 - live-reload on file change
 - value readability over DRYness/cleverness
 
+* - list created with help from @GregEMartinez
 
-## Features
+
+## Features / Libraries / Focuses
 
 mori
 virtual-dom
@@ -49,7 +55,8 @@ ajax?
 router?
 local storage?
 
-## Libraries
+### Router
+- check out this framework agnostic router! http://joshduff.com/#!/post/2015-06-why-you-need-a-state-router.md
 
 ### Typescript
 
@@ -122,7 +129,9 @@ DSL's To Chose From:
 - Stylus
 - Javascript
 
-I wanna try: [restyle](https://github.com/WebReflection/restyle)
+#### Resources
+[Interoperable CSS](http://glenmaddern.com/articles/interoperable-css)
+[restyle](https://github.com/WebReflection/restyle)
 
 ## Keywords
 - [MVI](http://futurice.com/blog/reactive-mvc-and-the-virtual-dom)
