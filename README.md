@@ -30,6 +30,7 @@ tl;dr no one size fits all, just like no one framework to rule them all
 - < 1 second load
 - mobile friendly
 - sensitive to user's bandwidth
+- maintain ~60fps rendering performance
 
 ### Developer Goals
 - write ES20XX today
