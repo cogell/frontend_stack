@@ -56,6 +56,13 @@ ajax?
 router?
 local storage?
 
+### Components
+- responsive axis
+- bandwidth axis
+- load order axis
+- feature/service axis
+- logging endpoint (errors, usage on which urls, etc)
+
 ### Router
 - check out this framework agnostic router! http://joshduff.com/#!/post/2015-06-why-you-need-a-state-router.md
 
