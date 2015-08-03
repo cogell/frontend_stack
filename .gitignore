@@ -1,3 +1,6 @@
+# OS Files #
+.DS_store
+
 # NPM Files #
 npm-debug.log
 node_modules
@@ -7,3 +10,6 @@ _dist
 
 # Dev Work #
 docs/_private.md
+
+# Editor(s) Files #
+.idea
